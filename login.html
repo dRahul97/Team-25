@@ -1,55 +1,49 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
     <style>
-        .container {
-            width: 25%;
-            height: 430px;
-            /* border: 1px solid red; */
+        #container {
+            width: 30%;
+            height: 400px;
+            padding-top: 30px;
             margin: auto;
-            margin-top: 85px;
-            background-color: rgb(86, 149, 174);
-            padding-top: 20px;
-        }
-        
-        .container>h1 {
+            margin-top: 50px;
             text-align: center;
-            color: aliceblue;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
         
-        input[type="text"] {
-            width: 80%;
-            margin-left: 25px;
-            padding: 15px 0;
-            margin-top: 15px;
-            padding-left: 18px;
-            border: 0px solid;
-            border-radius: 5px;
+        #btn {
+            background-color: rgb(132, 132, 213);
+            padding: 10px;
+            width: 40%;
+            border: 0;
         }
         
-        input[type="submit"] {
-            width: 80%;
-            margin-left: 25px;
-            padding: 15px 0px;
-            margin-top: 15px;
-            border: 0px solid;
-            background-color: rgb(238, 140, 140);
-            color: aliceblue;
-            border-radius: 5px;
+        input {
+            padding: 10px;
+        }
+        
+        strong {
+            color: blue;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>- Visitor -</h1>
-        <input type="text" placeholder="Full name"> <br>
-        <input type="text" placeholder="Email"> <br>
-        <input type="text" placeholder="Organization"> <br>
-        <input class="enter" type="submit" value="SIGN UP"> <br>
-        <input class="enter" type="submit" value="RETURN"> <br>
+    <div id="container">
+        <h1>Login</h1>
+        <div class="box">
+            <input type="email" placeholder="Email" /><br /><br />
+            <input type="password" placeholder="Password" /><br /><br />
+            <button id="btn">Login</button><br />
+            <p>Forgot <strong>Password</strong>?</p>
+            <p>Don't have an account?<strong>SignUp</strong></p>
+        </div>
     </div>
 </body>
 
