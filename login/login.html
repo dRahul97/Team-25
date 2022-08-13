@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 
+  <head>
+
+
 <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <style>
+
+      body {
+        background: linear-gradient(
+          90deg,
+          rgba(80, 126, 204, 1) 0%,
+          rgba(89, 117, 200, 1) 40%,
+          rgba(113, 94, 187, 1) 100%
+        );
+      }
+      #container {
+        width: 19%;
+        height: 450px;
+        padding-top: 30px;
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+        box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+        border-radius: 8px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #btn {
+        background: linear-gradient(
+          90deg,
+          rgba(80, 126, 204, 1) 0%,
+          rgba(89, 117, 200, 1) 40%,
+          rgba(113, 94, 187, 1) 100%
+        );
+        padding: 15px;
+        width: 70%;
+        border: 0;
+      }
+
+      input {
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid gray;
+        width: 66%;
+        margin-bottom: 30px;
+        font-size: 17px;
+      }
+
+      strong {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Login</h1>
+      <div class="box">
+        <input type="email" placeholder="Email" /><br /><br />
+        <input type="password" placeholder="Password" /><br /><br />
+        <button id="btn">Login</button><br />
+        <p>Forgot <strong>Password</strong>?</p>
+        <p>Don't have an account?<strong>SignUp</strong></p>
+      </div>
+    </div>
+  </body>
+</html>
+
         #container {
             width: 30%;
             height: 400px;
@@ -48,3 +116,4 @@
 </body>
 
 </html>
+
