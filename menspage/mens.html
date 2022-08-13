@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #first {
+        width: 40%;
+        margin: auto;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 400px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      #image {
+        height:400px;
+        width: 98%;
+        margin: auto;
+      }
+      img {
+        height: 100%;
+      }
+      #image ~ p {
+        margin-top: -10px;
+      }
+      #price {
+        display: flex;
+      }
+      #price {
+        margin-top: -30px;
+      }
+      #price p {
+        margin-left: 10px;
+      }
+
+      #price > :nth-child(2) {
+        margin-top: 22px;
+        text-decoration: line-through;
+        font-size: 20px;
+        color: grey;
+      }
+      #price > :nth-child(3) {
+        margin-top: 22px;
+        color: green;
+        font-size: 20px;
+      }
+      #first > div > :nth-child(3) {
+        color: grey;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first">
+      <div>
+        <div id="image">
+          <img
+            src="https://assetscdn1.paytm.com/images/catalog/product/A/AP/APPPAUSE-BLACK-PAUS57747861200F37/1562877340930_1..jpg?imwidth=320&impolicy=hq"
+            alt=""
+          />
+        </div>
+        <h2>Pause</h2>
+        <p>Men Cotton Long sleeves Shrug</p>
+        <div id="price">
+          <h2>₹ 359</h2>
+          <p id="Prices">₹1499</p>
+          <p id="discount">-76%</p>
+        </div>
+      </div>
+      <div>
+        <div id="image">
+          <img
+            src="https://assetscdn1.paytm.com/images/catalog/product/A/AP/APPJUBINATION-SJERS295568BD3913AD/1562955990957_0..jpg?imwidth=320&impolicy=hq"
+            alt=""
+          />
+        </div>
+        <h2>JUBINATION</h2>
+        <p>Men Cotton Long sleeves Shrug</p>
+        <div id="price">
+          <h2>₹ 799</h2>
+          <p id="Prices">₹1499</p>
+          <p id="discount">-47%</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
